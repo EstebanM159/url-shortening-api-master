@@ -18,6 +18,7 @@
 }
 .navbar-collapse{
     background-color: var(--violetaOscuro);
+    border-radius: 10px;
 }
 .nav-link{
     color: #fff;
@@ -25,10 +26,13 @@
 .navReso{
     border-bottom: 1px solid #fff;
 }
-.navbar-toggler{
-    border:none;
-}
 
+.navbar-collapse{
+    position: fixed;
+    top: 25px;
+    right: 0;
+    left:0;
+}
 .image-container{
     display: flex;
     justify-content: center;
