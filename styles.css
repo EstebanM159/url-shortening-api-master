@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+:root{
+   
+--cyan:hsl(180, 66%, 49%);
+--violetaOscuro:hsl(257, 27%, 26%);
+/* -- */
+--gris : hsl(0, 0%, 75%);
+--grisVioleta:hsl(257, 7%, 63%);
+--azulMuyOscuro:hsl(255, 11%, 22%);
+--violetaMuyOscuro:hsl(260, 8%, 14%) ;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    margin-top: 1rem;
+    background-color: transparent;
+}
+.navbar-collapse{
+    background-color: var(--violetaOscuro);
+}
+.nav-link{
+    color: #fff;
+}
+.navReso{
+    border-bottom: 1px solid #fff;
+}
+.navbar-toggler{
+    border:none;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    /* POLEMICO hasta 600px queda bien*/
+    align-items: start;
+    flex-direction: column;
+}
+.image-container img{
+    /* width: 100%; */
+}
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text h1{
+    padding-top: 2rem;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.intro-text p{
+    text-align: center;
+}
+.btn-info{
+    padding: 10px 0;
+    border-radius:20px ;
+    color: #fff;
+    width: 40%;
+    background-color: var(--cyan);
+    min-width: 138px;
+    max-width: 150px;
+}
+
+.form-section{
+    margin: 2rem 0;
+}
+.form{
+    background-color: var(--violetaOscuro);
+    border-radius: 10px;
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
