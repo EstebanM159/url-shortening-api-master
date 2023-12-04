@@ -5,6 +5,7 @@
 --violetaOscuro:hsl(257, 27%, 26%);
 /* -- */
 --gris : hsl(0, 0%, 75%);
+--grisBg:hsl(238.15deg 8.25% 95.01%);
 --grisVioleta:hsl(257, 7%, 63%);
 --azulMuyOscuro:hsl(255, 11%, 22%);
 --violetaMuyOscuro:hsl(260, 8%, 14%) ;
@@ -19,6 +20,10 @@
 .navbar-collapse{
     background-color: var(--violetaOscuro);
     border-radius: 10px;
+    position: fixed;
+    top: 25px;
+    right: 0;
+    left:0;
 }
 .nav-link{
     color: #fff;
@@ -27,37 +32,20 @@
     border-bottom: 1px solid #fff;
 }
 
-.navbar-collapse{
-    position: fixed;
-    top: 25px;
-    right: 0;
-    left:0;
+
+@media (width>=768px) {
+    .navbar-collapse{
+        position:initial;
+        background-color: transparent;
+    }
 }
-.image-container{
-    display: flex;
-    justify-content: center;
-    /* POLEMICO hasta 600px queda bien*/
-    align-items: start;
-    flex-direction: column;
-}
-.image-container img{
-    /* width: 100%; */
-}
-.intro-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .intro-text h1{
-    padding-top: 2rem;
+    
     font-size: 40px;
-    text-align: center;
     font-weight: 700;
 }
-.intro-text p{
-    text-align: center;
-}
+
 .btn-info{
     padding: 10px 0;
     border-radius:20px ;
@@ -67,9 +55,12 @@
     min-width: 138px;
     max-width: 150px;
 }
-
+.btn-copy{
+    background-color: var(--cyan);
+    color: #fff;
+}
 .form-section{
-    margin: 2rem 0;
+    background-color: var(--grisBg);
 }
 .form{
     background-color: var(--violetaOscuro);
@@ -77,4 +68,66 @@
     background-image: url(images/bg-shorten-mobile.svg);
     background-repeat: no-repeat;
     background-position: top right;
+}
+.advanced-statistcs{
+    padding-top: 1rem;
+    background-color: var(--grisBg);
+    gap: 4rem;
+}
+
+
+.icon-container{
+    position: absolute;
+    top: -2.4rem;
+    background-color: var(--violetaOscuro);
+    padding: 1rem;
+    border-radius: 50%;
+}
+.linea{
+    position: absolute;
+    top: -49px;
+    width: 5px;
+    height: 3rem;
+    background-color: var(--cyan);
+}
+@media (width>767px) {
+    
+    .linea{
+        width: 3rem;
+        height: 4px;
+        top: 50%;
+        left: -49px;
+    }
+   
+}
+
+.titulo-card{
+    font-weight: 700;
+}
+.card p, .card-text{
+    color: var(--grisVioleta);
+}
+.boostYourLinks{
+    background-color: var(--violetaOscuro);
+    background-image: url(images/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 300px;
+}
+footer{
+
+    background-color: var(--violetaMuyOscuro);
+}
+.logo-footer{
+    filter: invert(1);
+    margin: 2rem 0;
+}
+.caja-footer{
+    color: #fff;
+}
+.caja-footer li{
+    list-style: none;
+}
+.caja-footer h5{
+    font-weight: 700;
 }

@@ -1,116 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <title>Shortly URL shortening API </title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-   <style>
-    /* Estilo personalizado para cambiar el color del icono */
-    .icono-personalizado {
-      color: #ff0000; /* Cambia este valor al color que desees */
-    }
-  </style>
 </head>
 <body>
   <header>
-    <nav class="navbar  navbar-expand-lg">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-md">
+    <div class="container-md d-flex">
       <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse py-3 mt-5 mx-4" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-flex flex-column align-items-center">
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link" href="#" >Resources</a>
-          <a class="nav-link border-top w-75 text-center" href="#">Login</a>
-          <button type="submit" class="btn btn-primary w-75 my-2">Submit</button>
+      <div class="collapse navbar-collapse py-3 mt-5 mx-4 py-md-0 mt-md-0 mx-md-0" id="navbarNavAltMarkup">
+        <div class="navbar-nav w-100 d-flex justify-content-between">
+          <div class="nav-links text-center d-md-flex align-items-center">
+            <a class="nav-link text-black" href="#">Features</a>
+            <a class="nav-link text-black" href="#">Pricing</a>
+            <a class="nav-link text-black" href="#" >Resources</a>
+          </div>
+          <div class="login gap-2 d-flex flex-column flex-md-row justify-content-center align-items-center" >
+            <a class="nav-link border-top w-75 text-center text-black" href="#">Login</a>
+            <button type="submit" class="btn btn-primary w-75 my-2 text-black">Submit</button>
+          </div>
         </div>
       </div>
     </div>
     </nav>
   </header>
-  <section class="intro-section">
+    <!-- SECCION -->
+  <section class="intro-section d-md-flex mt-3 mx-5 flex-row-reverse">
     <div class="image-container">
-      <img src="images/illustration-working.svg" alt="">
+      <img class="w-100" src="images/illustration-working.svg" alt="">
     </div>
-    <div class="intro-text container">
-      <h1>More than just shorter links</h1>
-      <p> 
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h1 class="pt-4 text-center">More than just shorter links</h1>
+      <p class="text-center"> 
         Build your brand’s recognition and get detailed insights  
         on how your links are performing.
       </p>
       <button type="button" class="btn btn-info">Get Started</button>
     </div>
   </section>
-  <section class="form-section container justify-content-center d-flex">
-    <form class="form d-flex align-items-center flex-column w-75 py-4">
-      <div class="mb-3">
+  <!-- SECCION -->
+  <section class="form-section justify-content-center d-flex flex-column gap-4 px-5 py-4 mt-5">
+    <form class="form d-flex align-items-center flex-column flex-md-row justify-content-center py-4 px-md-5 gap-md-4">
+      <div class="mb-3 mb-md-0 w-75 ">
         <!-- <label for="exampleInputEmail1" class="form-label">Please add link</label> -->
         <input type="email" placeholder="Shorten a link here..." autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
-      <button type="submit" class="btn btn-primary w-75">Submit</button>
+      <button type="submit" class="btn btn-primary w-md-100">Submit</button>
     </form>
+    <!-- esto es lo q tengo q generar con el js -->
+  <div class="card d-flex justify-content-center align-items-start">
+    <div class="card-header w-100">
+      <span>https://wwww.frontendmentor.io</span>
+    </div>
+    <div class="card-body w-100 gap-2 d-flex flex-column">
+      <h5 class="card-title">https://rel.ink/k4IKyk</h5>
+      <button type="button" class="btn btn-copy w-100">Copy</button>
+    </div>
+  </div>
   </section>
-  <!-- form -->
-  <!--  -->
-
-  <!-- Shorten It!npm i bootstrap-icons -->
-<!-- form -->
-<!-- info -->
-  <!-- Advanced Statisticsnpm i bootstrap-icons -->
-
-  <!-- Track how your links are performing across the web with our npm i bootstrap-icons -->
-  <!-- advanced statistics dashboard.npm i bootstrap-icons -->
-<!-- npm i bootstrap-icons -->
-  <!-- Brand Recognitionnpm i bootstrap-icons -->
-
-  <!-- Boost your brand recognition with each click. Generic links don’t npm i bootstrap-icons -->
-  <!-- mean a thing. Branded links help instil confidence in your content.npm i bootstrap-icons -->
-
-  <!-- Detailed Recordsnpm i bootstrap-icons -->
-
-  <!-- Gain insights into who is clicking your links. Knowing when and where npm i bootstrap-icons -->
-  <!-- people engage with your content helps inform better decisions.npm i bootstrap-icons -->
-
-  <!-- Fully Customizablenpm i bootstrap-icons -->
-
-  <!-- Improve brand awareness and content discoverability through customizable npm i bootstrap-icons -->
-  <!-- links, supercharging audience engagement.npm i bootstrap-icons -->
-<!-- info -->
-  <!-- Boost your links todaynpm i bootstrap-icons -->
-
-  <!-- Get Startednpm i bootstrap-icons -->
-<!-- info -->
-<!-- footer -->
-  <!-- Featuresnpm i bootstrap-icons -->
-
-  <!-- Link Shorteningnpm i bootstrap-icons -->
-  <!-- Branded Linksnpm i bootstrap-icons -->
-  <!-- Analyticsnpm i bootstrap-icons -->
-
-  <!-- Resourcesnpm i bootstrap-icons -->
-
-  <!-- Blognpm i bootstrap-icons -->
-  <!-- Developersnpm i bootstrap-icons -->
-  <!-- Supportnpm i bootstrap-icons -->
-
-  <!-- Companynpm i bootstrap-icons -->
-  <!-- Aboutnpm i bootstrap-icons -->
-  <!-- Our Teamnpm i bootstrap-icons -->
-  <!-- Careersnpm i bootstrap-icons -->
-  <!-- Contactnpm i bootstrap-icons -->
-  <!--footer  -->
-  <div class="attribution">
+    <!-- SECCION -->
+  <section class="advanced-statistcs d-flex flex-column align-items-center text-center p-5">
+    <div class="intro-advanced my-2">
+      <h1 class="titulo-card">Advanced Statistics </h1>
+      <p class="card-text">Track how your links are performing across the web with our advanced statistics dashboard. </p>
+    </div>
+    <div class="cards-container d-flex flex-column flex-md-row gap-5">
+      <div class="card border-0 h-75 position-relative d-flex justify-content-center align-items-center pt-5 px-4">
+        <div class="icon-container">
+          <img src="images/icon-brand-recognition.svg" alt="">
+        </div>
+        <h2 class="titulo-card"> Brand Recognition </h2>
+        <p>
+            Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+      <div class="card border-0 position-relative d-flex justify-content-center align-items-center  pt-5  px-4">
+        <span class="linea"></span>
+        <div class="icon-container">
+          <img src="images/icon-detailed-records.svg" alt="">
+        </div>
+        <h2 class="titulo-card"> Detailed Records</h2>
+        <p>
+            Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.
+        </p>
+      </div>
+      <div class="card border-0 position-relative d-flex justify-content-center align-items-center  pt-5 px-4">
+        <span class="linea"></span>
+        <div class="icon-container">
+          <img src="images/icon-fully-customizable.svg" alt="">
+        </div>
+        <h2 class="titulo-card">Fully Customizable </h2>
+        <p>
+          Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="boostYourLinks d-flex gap-4 justify-content-center align-items-center flex-column py-5">
+    <h2 class="text-white"> Boost your links today </h2>
+    <button type="button" class="btn btn-info">Get Started</button>
+  </div>
+  
+<footer class="d-flex justify-content-center align-items-center text-center flex-column gap-3">
+  <img src="images/logo.svg" class="logo-footer" alt="">
+  <div class="caja-footer">
+    <h5>Features</h5>
+    <ul class="list-group d-flex flex-column gap-2">
+      <li>Link Shortening</li>
+      <li>Branded Links</li>
+      <li>Analytics</li>
+    </ul>
+  </div>
+  <div class="caja-footer">
+    <h5>Resources</h5>
+    <ul class="list-group d-flex flex-column gap-2">
+      <li>Blog</li>
+      <li>Developers</li>
+      <li>Support</li>
+    </ul>
+  </div>
+  <div class="caja-footer ">
+    <h5>Company</h5>
+     <ul class="list-group d-flex flex-column gap-2">
+      <li>About</li>
+      <li>Our Team</li>
+      <li>Careers</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="social d-flex justify-content-around w-75 pb-3">
+    <img src="images/icon-facebook.svg" alt="facebookIcon">
+    <img src="images/icon-twitter.svg" alt="twitterIcon">
+    <img src="images/icon-pinterest.svg" alt="pinteresIcon">
+    <img src="images/icon-instagram.svg" alt="instragramIcon">
+  </div>
+</footer>
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
